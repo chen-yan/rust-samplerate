@@ -1,6 +1,7 @@
 [package]
 name = "samplerate"
-version = "0.2.4"
+version = "0.2.5"
+edition = "2021"
 authors = ["Frederick Gnodtke <frederick@gnodtke.net>"]
 readme = "README.md"
 categories = ["multimedia::audio"]
@@ -10,7 +11,7 @@ keywords = ["audio", "samplerate"]
 license = "BSD-2-Clause"
 
 [dependencies]
-libsamplerate-sys = "0.1.10"
+libsamplerate-sys = {version = "0.1.14", git = "https://github.com/chen-yan/libsamplerate-sys.git"}
 
 [dev-dependencies]
 hound = "3.4"
